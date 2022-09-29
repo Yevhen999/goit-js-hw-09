@@ -16,3 +16,17 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.value {
+  background-color: yellow;
+  font-size: larger;
+  font-style: oblique;
+  font-weight: 600;
+}
+
+.label {
+  background-color: chartreuse;
+  font-size: larger;
+  font-style: oblique;
+  font-weight: 600;
+}
