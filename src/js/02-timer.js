@@ -40,6 +40,9 @@ const timer = {
   start() {
     this.intervalId = setInterval(() => {
       const startTime = numberSelectedDates - Date.now();
+      if (startTime < 1000) {
+        clearInterval(intervalId);
+      }
       const timeComponents = convertMs(startTime);
       const { days, hours, minutes, seconds } = this.refs;
       this.refs.daysRefs.textContent = addLeadingZero(timeComponents.days);
